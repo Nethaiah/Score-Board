@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    color: whitesmoke;
+}
+
+.custom-shape-divider-bottom-1684743711 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1684743711 svg {
+    position: relative;
+    display: block;
+    width: calc(148% + 1.3px);
+    height: 390px;
+}
+
+.custom-shape-divider-bottom-1684743711 .shape-fill {
+    fill: #0066FF;
+}
+
+body{
+    background-color: #002233;
+    margin: 0 6rem;
+    margin-bottom: 6rem;
+}
+
+.logo{
+    letter-spacing: 4px;
+    margin: 1rem 0;
+    margin-bottom: 7rem;
+    font-size: 1.5rem;
+}
+
+.main-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+button{
+    color: black;
+    padding: .5rem 2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.team-score, .enemy-score{
+    font-size: 6rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.main-button-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.button-cont-1, .button-cont-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.enter{
+    width: 100%;
+}
+
+.team-cont, .enemy-cont{
+    padding: 2rem;
+    padding-top: 0;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+input{
+    color: black;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    padding: .25rem 1rem;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+.team-name, .enemy-name{
+    color: white;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    display: hidden;
+}
+
+.add-padding{
+    padding-top: 2rem;
+}
+
+hr{
+    border: 1px solid white;
+    margin-top: 1rem;
+}
+
+@media (max-width: 950px){
+    .main-wrapper{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px){
+    body{
+        margin: 0 3rem;
+    }
+
+    button{
+        font-size: .85rem;
+    }
+
+    .team-score,
+    .enemy-score {
+        font-size: 4rem;
+    }
+
+    .button-cont-1,
+    .button-cont-2 {
+        gap: 1rem;
+    }
+
+    .team-name,
+    .enemy-name {
+        font-size: 1.25rem;
+    }
+}
